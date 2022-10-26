@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank_management.HelloController">
+   <children>
+      <AnchorPane layoutY="-9.0" prefHeight="79.0" prefWidth="601.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="387.0" fitWidth="387.0" layoutX="106.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Untitled-4.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="8.0" layoutY="299.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="94.0" style="-fx-background-radius: 50; -fx-background-color: #ff8c00;" text="Transaction" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="243.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="81.0" style="-fx-background-radius: 50; -fx-background-color: #ff8c00;" text="Balance" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="187.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="81.0" style="-fx-background-radius: 50; -fx-background-color: #ff8c00;" text="Transfer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnWithdraw" layoutX="14.0" layoutY="130.0" mnemonicParsing="false" onAction="#onWithdraw" prefHeight="41.0" prefWidth="81.0" style="-fx-background-radius: 50; -fx-background-color: #ff8c00;" text="Withdraw" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDepo" layoutX="14.0" layoutY="70.0" mnemonicParsing="false" onAction="#onDepo" prefHeight="41.0" prefWidth="81.0" style="-fx-background-radius: 50; -fx-background-color: #ff8c00;" text="Deposit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="149.0" layoutX="8.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/access-bank-plc-icon-512x128-r5rvcuv8.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBackAgain" layoutX="16.0" layoutY="361.0" mnemonicParsing="false" onAction="#onBackAgain" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: blue;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEdit" layoutX="487.0" layoutY="361.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: red;" text="Edit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnProfile" layoutX="120.0" layoutY="68.0" mnemonicParsing="false" onAction="#onProfile" prefHeight="41.0" prefWidth="81.0" style="-fx-background-radius: 50; -fx-background-color: green;" text="Profile" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="221.0" layoutY="68.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="94.0" style="-fx-background-radius: 50; -fx-background-color: #ff8c00;" text="Change Pin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Line endX="391.0" endY="-60.66667556762695" layoutX="208.0" layoutY="118.0" startX="-209.33334350585938" startY="-60.66667175292969" />
+            <Line endX="-113.00000762939453" endY="283.0" layoutX="225.0" layoutY="118.0" startX="-113.00000762939453" startY="-60.66667175292969" />
+            <Text layoutX="384.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acc Number :" wrappingWidth="94.0" />
+            <Text layoutX="479.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time :" wrappingWidth="34.4713134765625" />
+            <TextField fx:id="btnAccount" layoutX="464.0" layoutY="23.0" prefHeight="25.0" prefWidth="104.0" />
+            <TextField fx:id="btnTime" layoutX="512.0" layoutY="64.0" prefHeight="25.0" prefWidth="81.0" />
+            <Button fx:id="btnSave" layoutX="397.0" layoutY="361.0" mnemonicParsing="false" onAction="#onSave" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: green;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtnewName" layoutX="125.0" layoutY="151.0" prefHeight="25.0" prefWidth="191.0" />
+            <TextField fx:id="txtNewEmail" layoutX="128.0" layoutY="208.0" prefHeight="25.0" prefWidth="191.0" />
+            <TextField fx:id="txtnewContact" layoutX="128.0" layoutY="271.0" prefHeight="25.0" prefWidth="191.0" />
+            <TextField fx:id="txtnewUser" layoutX="128.0" layoutY="327.0" prefHeight="25.0" prefWidth="191.0" />
+            <Text layoutX="128.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="94.0" />
+            <Text layoutX="127.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="94.0" />
+            <Text layoutX="130.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" wrappingWidth="94.0" />
+            <Text layoutX="128.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="94.0" />
+            <TextField fx:id="txtAccNum" layoutX="347.0" layoutY="151.0" prefHeight="25.0" prefWidth="146.0" />
+            <Text layoutX="350.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acc Number" wrappingWidth="94.0" />
+            <TextField fx:id="txtnewDOB" layoutX="347.0" layoutY="208.0" prefHeight="25.0" prefWidth="146.0" promptText="dd/mm/yy">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
+            <Text layoutX="350.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth" wrappingWidth="94.0" />
+            <TextField fx:id="txtnewAddress" layoutX="348.0" layoutY="271.0" prefHeight="25.0" prefWidth="146.0" />
+            <Text layoutX="350.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal Address" wrappingWidth="94.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

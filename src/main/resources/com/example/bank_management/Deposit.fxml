@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="353.0" prefWidth="401.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank_management.HelloController">
+   <children>
+      <ImageView fitHeight="27.0" fitWidth="227.0" layoutX="136.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/access-bank-plc-icon-512x128-r5rvcuv8.png" />
+         </image>
+      </ImageView>
+      <Line endX="273.9999694824219" endY="-19.33333969116211" layoutX="127.0" layoutY="60.0" startX="-127.00000762939453" startY="-19.33333969116211" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="57.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User" wrappingWidth="95.47003555297852">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="95.47003555297852">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account No." wrappingWidth="124.13666152954102">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance" wrappingWidth="124.13666152954102">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deposit" wrappingWidth="124.13666152954102">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDepoUser" layoutX="181.0" layoutY="66.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="txtDepoName" layoutX="181.0" layoutY="105.0" prefHeight="25.0" prefWidth="163.0" />
+      <TextField fx:id="txtDepoAcc" layoutX="181.0" layoutY="151.0" prefHeight="25.0" prefWidth="163.0" />
+      <TextField fx:id="txtBalance" layoutX="181.0" layoutY="200.0" prefHeight="25.0" prefWidth="163.0" />
+      <TextField fx:id="txtAmount" layoutX="181.0" layoutY="245.0" prefHeight="25.0" prefWidth="114.0" />
+      <Button fx:id="btnSearch" layoutX="302.0" layoutY="66.0" mnemonicParsing="false" onAction="#onSearch" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: orange;" text="search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDeposit" layoutX="181.0" layoutY="285.0" mnemonicParsing="false" onAction="#onDeposit" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: green;" text="Deposit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="303.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/icons8_search_128px.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnDepoBack" layoutX="57.0" layoutY="288.0" mnemonicParsing="false" onAction="#onDepoBack" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #0066ff;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

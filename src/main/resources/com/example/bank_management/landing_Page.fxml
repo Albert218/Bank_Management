@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="377.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank_management.HelloController">
+   <children>
+      <ImageView fitHeight="390.0" fitWidth="600.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/960x0.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="332.0" layoutY="22.0" prefHeight="337.0" prefWidth="253.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <children>
+            <Button fx:id="btnSignIn" layoutX="24.0" layoutY="243.0" mnemonicParsing="false" onAction="#onbtnSignIn" prefHeight="27.0" prefWidth="215.0" style="-fx-background-color: green;" text="Sign in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCreate" layoutX="24.0" layoutY="287.0" mnemonicParsing="false" onAction="#onbtnCreate" prefHeight="27.0" prefWidth="215.0" style="-fx-background-color: orange;" text="Create New Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtUserName" layoutX="19.0" layoutY="111.0" prefHeight="27.0" prefWidth="215.0" />
+            <Text layoutX="19.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="113.4700927734375">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="19.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="113.4700927734375">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="152.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot password?" wrappingWidth="89.47015380859375">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+            </Text>
+            <Text layoutX="63.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to" wrappingWidth="152.13671875">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="32.0" fitWidth="152.0" layoutX="64.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/access-bank-plc-icon-512x128-r5rvcuv8.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblDisplay" layoutX="24.0" layoutY="216.0" prefHeight="17.0" prefWidth="113.0">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtPassword" layoutX="19.0" layoutY="173.0" prefHeight="25.0" prefWidth="215.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
